@@ -402,7 +402,7 @@ footer p{
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 5px;
     }
-    
+
     #gallerycontainer figure figcaption{
         min-height: 60px;
 
@@ -439,6 +439,9 @@ footer p{
         padding-right: 10px;
         color: white;
         border-bottom: 0;
+    }
+    .seals{
+        max-width: 50%;
     }
 }
 }
