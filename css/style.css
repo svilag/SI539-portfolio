@@ -352,7 +352,7 @@ footer p{
 }
 
 /*timeline mobile*/
-@media screen and (max-width: 600){
+@media screen and (max-width: 600px){
     .resumehead{
         text-align: left;
     }
@@ -395,7 +395,7 @@ footer p{
 }
 
 /* tablet */
-@media screen and (min-width: 600){
+@media screen and (min-width: 600px){
     #gallerycontainer{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -409,7 +409,7 @@ footer p{
 }
 
 /* computer */
-@media screen and (min-width: 1200){
+@media screen and (min-width: 2000px){
     #gallerycontainer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
