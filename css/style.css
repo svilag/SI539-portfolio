@@ -1,0 +1,443 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #222629;
+}
+
+.bg{
+    background-image: url(../images/wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: unset;
+    background-attachment: fixed;
+}
+
+#skiptomain{
+    position: absolute;
+    top: -100px;
+    color: white;
+}
+
+#skiptomain:focus{
+    top: 0%;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0, 0.75);
+    padding: 10px;
+}
+
+*:focus{
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(107, 110, 112, .5);
+}
+
+nav ul li{
+    height: 60px;
+    flex-basis: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #116466;
+}
+
+/*for pc view
+nav ul li:hover{
+
+}*/
+
+* a{
+    text-decoration: none;
+    color: #66FCF1;
+}
+
+nav ul li a{
+    color: #66FCF1;
+    text-transform: lowercase;
+    font-family: "Orbitron", sans-serif;
+}
+
+.socials{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    background-color: rgb(255, 255, 255, .5);
+    padding: 5px;
+    border-bottom-left-radius: 8px;
+}
+
+.currentpage{
+    border-bottom: 4px solid #66FCF1;
+    padding: 10px;
+}
+
+.currentpage a{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 24px;
+    font-family: "Orbitron", sans-serif;
+    padding: 10px;
+    color: #66FCF1;
+}
+
+.aboutcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.abouttxt{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5;
+}
+
+.abouttxt a{
+    border: 1px solid #66FCF1;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+.aboutimg{
+    max-height: 400px;
+    max-width: 90%;
+    border: 1px solid #66FCF1;
+}
+
+.hometxtbg{
+    background-color: rgb(34, 38, 41, .75);
+    border-radius: 8px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.hometxt{
+    color: white;
+    line-height: 1.5;
+}
+
+.sealcontainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.seals:nth-child(even){
+    justify-self: end;
+}
+
+.seals:nth-child(odd){
+    justify-self: start;
+}
+
+.seals{
+    max-width: 450px;
+    border: 2px solid #66FCF1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.resumehead{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    background-color: #6B6e70;
+    border-radius: 8px;
+    margin: 2px;
+}
+
+
+/*timeline here*/
+/*original code from w3schools.com*/
+*{
+    box-sizing: border-box;
+}
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 5px;
+    border: 2px solid #6B6e70;
+    border-radius: 8px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 8px;
+}
+
+.container{
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #116466;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left{
+    left: 0;
+}
+
+.right{
+    left: 50%;
+}
+
+.left::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.right::after{
+    left: -16px;
+}
+
+.content{
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+.content h2{
+    color: #116466;
+}
+
+ul{
+    list-style: none;
+}
+
+.bpoint::before{
+    display: inline-block;
+    content: '';
+    border: 2px solid #116466;
+    background-color: #116466;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#gallerycontainer img{
+    width: 95%;
+    border: 2px solid #66FCF1;
+    transition-property: opacity;
+    transition-duration: .5s;
+}
+
+#dogs{
+    line-height: 1.5;
+    padding: 10px;
+    background-color: #6B6e70;
+    border-radius: 8px;
+    margin: 5px;
+    color: white;
+}
+
+#gallerycontainer figure{
+    padding-bottom: 20px;
+}
+
+#gallerycontainer figure figcaption{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+#gallerycontainer figure:nth-child(odd) figcaption{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left: 10px;
+    text-align: left;
+    color: white;
+    border-bottom: 1px solid #116466;
+}
+
+#gallerycontainer figure:nth-child(even) figcaption{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    border-bottom: 1px solid #116466;
+}
+
+#totop{
+    border: 2px solid #66FCF1;
+    border-radius: 8px;
+    background-color: rgb(116, 114, 116, .75);
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    padding: 10px;
+}
+
+footer{
+    background-color: rgb(107, 110, 112, .5);
+    max-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid white;
+    padding-left: 10px;
+    color: white;
+    margin-top: 5px;
+}
+
+footer ul{
+    list-style-type: none;
+    line-height: 2;
+}
+
+footer p{
+    color: white;
+}
+
+/*timeline mobile*/
+@media screen and (max-width: 800px){
+    .resumehead{
+        text-align: left;
+    }
+
+    .timeline::after{
+        left: 31px;
+    }
+
+    .container{
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container::before{
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after, .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0%;
+    }
+    /*Code for timeline taken from https://www.w3schools.com/howto/howto_css_timeline.asp and modified*/
+
+
+    /* mobile grid */
+    #gallerycontainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 0px;
+        text-align: center;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 600px){
+    #gallerycontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 5px;
+    }
+    
+    #gallerycontainer figure figcaption{
+        min-height: 60px;
+
+}
+
+/* computer */
+@media screen and (min-width: 800px){
+    #gallerycontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 5px;
+    }
+
+    #gallerycontainer img{
+        opacity: .5;}
+
+    #gallerycontainer img:hover{
+        opacity: 1;}
+
+    #gallerycontainer figure:nth-child(odd) figcaption{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding-left: 10px;
+        text-align: center;
+        color: white;
+        border-bottom: 0;
+    }
+    
+    #gallerycontainer figure:nth-child(even) figcaption{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        text-align: center;
+        padding-right: 10px;
+        color: white;
+        border-bottom: 0;
+    }
+}
