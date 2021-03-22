@@ -33,7 +33,7 @@ body{
 
 nav ul{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: left;
     align-items: center;
     background-color: rgb(107, 110, 112, .5);
@@ -405,6 +405,14 @@ footer p{
 
     #gallerycontainer figure figcaption{
         min-height: 60px;
+    }
+    nav ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: left;
+        align-items: center;
+        background-color: rgb(107, 110, 112, .5);
+    }
 
 }
 
