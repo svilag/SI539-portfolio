@@ -352,7 +352,7 @@ footer p{
 }
 
 /*timeline mobile*/
-@media screen and (max-width: 800px){
+@media screen and (max-width: 600){
     .resumehead{
         text-align: left;
     }
@@ -395,7 +395,7 @@ footer p{
 }
 
 /* tablet */
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600){
     #gallerycontainer{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -409,7 +409,7 @@ footer p{
 }
 
 /* computer */
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1200){
     #gallerycontainer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -431,7 +431,7 @@ footer p{
         color: white;
         border-bottom: 0;
     }
-    
+
     #gallerycontainer figure:nth-child(even) figcaption{
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
