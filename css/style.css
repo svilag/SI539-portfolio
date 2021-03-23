@@ -396,7 +396,7 @@ footer p{
 }
 
 /* tablet */
-@media screen and (min-width: 600px){
+/* @media screen and (min-width: 600px){
     #gallerycontainer{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -408,10 +408,10 @@ footer p{
         min-height: 60px;
     }
 
-}
+} */
 
 /* computer */
-@media screen and (min-width: 1200px){
+/* @media screen and (min-width: 1200px){
     #gallerycontainer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -442,4 +442,4 @@ footer p{
         color: white;
         border-bottom: 0;
     }
-}
+} */
