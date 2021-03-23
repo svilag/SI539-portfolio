@@ -292,6 +292,15 @@ ul{
     color: white;
 }
 
+/* mobile grid */
+#gallerycontainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0px;
+    text-align: center;
+}
+
 #gallerycontainer figure{
     padding-bottom: 20px;
 }
@@ -385,14 +394,7 @@ footer p{
     /*Code for timeline taken from https://www.w3schools.com/howto/howto_css_timeline.asp and modified*/
 
 
-    /* mobile grid */
-    #gallerycontainer{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 0px;
-        text-align: center;
-    }
+    
 }
 
 /* tablet */
