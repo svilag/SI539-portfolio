@@ -411,7 +411,7 @@ footer p{
 }
 
 /* computer */
-@media screen and (min-width: 2000px){
+@media screen and (min-width: 1200px){
     #gallerycontainer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
