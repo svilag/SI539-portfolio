@@ -11,6 +11,20 @@ body{
     background-attachment: fixed;
 }
 
+
+/* code for .bground from https://projects.verou.me/css3patterns/#carbon */
+.bground{
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+}
+
 #skiptomain{
     position: absolute;
     top: -100px;
@@ -132,26 +146,77 @@ h1{
 }
 
 .sealcontainer{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
-}
-
-.seals:nth-child(even){
-    justify-self: end;
-}
-
-.seals:nth-child(odd){
-    justify-self: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .seals{
-    max-width: 450px;
+    max-width: 500px;
+    height: min-content;
     border: 2px solid #66FCF1;
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+#whatthis{
+    margin-left: 10px;
+}
+
+.cardcontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* flip card code from */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 500px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.flip-card:focus-within .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #116466;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* end flip card code */
 
 .resumehead{
     color: white;
@@ -172,7 +237,6 @@ h1{
 
 .timeline{
     position: relative;
-    max-width: 1200px;
     margin: 0 5px;
     border: 2px solid #6B6e70;
     border-radius: 8px;
@@ -313,21 +377,31 @@ ul{
 }
 
 #gallerycontainer figure:nth-child(odd) figcaption{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
     padding-left: 10px;
     text-align: left;
     color: white;
-    border-bottom: 1px solid #116466;
 }
 
 #gallerycontainer figure:nth-child(even) figcaption{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
     text-align: right;
     padding-right: 10px;
     color: white;
-    border-bottom: 1px solid #116466;
+}
+
+iframe{
+    background-color: rgb(255, 255, 255, .5);
+    border-radius: 8px;
+}
+
+.contacthead{
+    text-align: center;
+}
+
+.formcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #totop{
@@ -339,6 +413,10 @@ ul{
     right: 3%;
     padding: 20px;
     font-size: 20px;
+}
+
+#totop a:active{
+    border: 0;
 }
 
 footer{

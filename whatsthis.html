@@ -30,13 +30,26 @@
 
     <main id="maincontent">
         <h1>what's this?</h1>
-        <p class="abouttxt">This is just a placeholder! Nothing special. I just wanted to fill my footer with more content to make it more visually appealling!</p>
+        <p id="whatthis" class="abouttxt">You've stumbled upon my page with a flipcard! Hover or tab the image to flip the card!</p>
+        <div class="cardcontainer">
+            <div class="flip-card">
+                <div class="flip-card-inner" tabindex="0">
+                <div class="flip-card-front">
+                    <img src="images/seal09.jpg" alt="seal" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                    <p class="abouttxt">This page is just a placeholder! Nothing special. I just wanted to fill my footer with more content to make it more visually appealling!</p>
+                    <p class="abouttxt">Enjoy the flipcard!</p>
+                </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
         <p>&copy; Shelbie Vilag 2021</p>
         <ul>
-            <li><a href="whatsthis.html">what's this?</a></li>
+            <li class="currentpage"><a href="whatsthis.html">what's this?</a></li>
             <li><a href="contact-me.html">Contact Me</a></li>
         </ul>
     </footer>
