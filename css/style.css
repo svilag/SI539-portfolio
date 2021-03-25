@@ -81,6 +81,7 @@ nav ul li a{
 
 .socials{
     position: fixed;
+    z-index: 1;
     top: 0%;
     right: 0%;
     background-color: rgb(255, 255, 255, .5);
@@ -148,6 +149,91 @@ h1{
     color: white;
     line-height: 1.5;
 }
+
+
+
+.seals{
+    animation-name: seal;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+/* pc animation */
+@-webkit-keyframes seal{
+    10%{
+        border-color: blue;
+    }
+    20%{
+        border-color: blueviolet;
+    }
+    30%{
+        border-color: purple;
+    }
+    40%{
+        border-color: maroon;
+    }
+    50%{
+        border-color: orangered;
+    }
+    60%{
+        border-color: orange;
+    }
+    70%{
+        border-color: yellow;
+    }
+    80%{
+        border-color: yellowgreen;
+    }
+    90%{
+        border-color: green;
+    }
+    100%{
+        border-color: #66FCF1;
+    }
+}
+
+@keyframes seal{
+    10%{
+        border-color: blue;
+    }
+    20%{
+        border-color: blueviolet;
+    }
+    30%{
+        border-color: purple;
+    }
+    40%{
+        border-color: maroon;
+    }
+    50%{
+        border-color: orangered;
+    }
+    60%{
+        border-color: orange;
+    }
+    70%{
+        border-color: yellow;
+    }
+    80%{
+        border-color: yellowgreen;
+    }
+    90%{
+        border-color: green;
+    }
+    100%{
+        border-color: #66FCF1;
+    }
+}
+
+/* @media (prefers-reduced-motion) {
+    #animaseal {
+      animation-name: seal;
+      animation: none;
+    }
+} */
+
 
 .sealcontainer{
     display: flex;
@@ -308,7 +394,6 @@ h1{
     border: 4px solid #116466;
     top: 15px;
     border-radius: 50%;
-    z-index: 1;
 }
 
 .left{
@@ -325,7 +410,6 @@ h1{
     position: absolute;
     top: 22px;
     width: 0;
-    z-index: 1;
     right: 30px;
     border: medium solid white;
     border-width: 10px 0 10px 10px;
@@ -338,7 +422,6 @@ h1{
     position: absolute;
     top: 22px;
     width: 0;
-    z-index: 1;
     left: 30px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
