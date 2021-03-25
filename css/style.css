@@ -165,6 +165,8 @@ h1{
     margin-left: 10px;
 }
 
+
+
 .whatcontainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -232,6 +234,11 @@ h1{
   background-color: #116466;
   color: white;
   transform: rotateY(180deg);
+}
+
+#flipseal{
+    width: 200px;
+    height: 200px;
 }
 
 /* end flip card code */
