@@ -428,7 +428,7 @@ iframe{
     background-color: rgb(116, 114, 116, .75);
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    left: 30px;
     padding: 20px;
     font-size: 20px;
 }
