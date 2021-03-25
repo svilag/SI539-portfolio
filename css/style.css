@@ -161,8 +161,26 @@ h1{
     margin-bottom: 5px;
 }
 
-#whatthis{
+.whatthis{
     margin-left: 10px;
+}
+
+.whatcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+
+#item2{
+    grid-row: 2/3;
+}
+
+#item3{
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
 }
 
 .cardcontainer{
