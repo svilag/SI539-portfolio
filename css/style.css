@@ -154,7 +154,7 @@ h1{
 }
 
 .seals{
-    max-width: 500px;
+    max-width: 400px;
     height: min-content;
     border: 2px solid #66FCF1;
     margin-top: 5px;
@@ -192,8 +192,8 @@ h1{
 /* flip card code from */
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   perspective: 500px;
 }
 
