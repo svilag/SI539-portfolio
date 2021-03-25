@@ -88,6 +88,10 @@ nav ul li a{
     border-bottom-left-radius: 8px;
 }
 
+.socials img:hover{
+    transform: scale(1.5);
+}
+
 .currentpage{
     border-bottom: 4px solid #66FCF1;
     padding: 10px;
@@ -252,6 +256,12 @@ h1{
     margin: 2px;
 }
 
+/* sticky headers */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
 
 /*timeline here*/
 /*original code from w3schools.com*/
@@ -276,6 +286,8 @@ h1{
     left: 50%;
     margin-left: -3px;
     border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .container{
