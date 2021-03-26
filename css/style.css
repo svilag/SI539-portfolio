@@ -23,6 +23,7 @@ body{
     linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
     background-color: #131313;
     background-size: 20px 20px;
+    background-attachment: fixed;
 }
 
 #skiptomain{
@@ -361,6 +362,7 @@ h1{
     margin: 0 5px;
     border: 2px solid #6B6e70;
     border-radius: 8px;
+    background-color: rgb(34, 38, 41, .75);
 }
 
 .timeline::after{
