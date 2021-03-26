@@ -112,6 +112,10 @@ h1{
     color: #66FCF1;
 }
 
+#resume{
+    text-align: center;
+}
+
 .aboutcontainer{
     display: flex;
     flex-wrap: wrap;
