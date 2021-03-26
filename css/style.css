@@ -339,9 +339,9 @@ h1{
     font-size: 18px;
     text-align: center;
     padding: 10px;
-    background-color: #6B6e70;
+    background-color: #116466;
     border-radius: 8px;
-    margin: 2px;
+    margin: 5px;
 }
 
 /* sticky headers */
@@ -363,7 +363,11 @@ h1{
     border: 2px solid #6B6e70;
     border-radius: 8px;
     background-color: rgb(34, 38, 41, .75);
-    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.timeline:last-of-type{
+    margin-bottom: 10px;
 }
 
 .timeline::after{
@@ -386,6 +390,7 @@ h1{
     background-color: inherit;
     width: 50%;
     line-height: 1.5;
+    border-radius: 8px;
 }
 
 .container::after{
@@ -552,7 +557,6 @@ footer{
     border-top: 1px solid white;
     padding-left: 10px;
     color: white;
-    margin-top: 5px;
     font-size: 20px;
 }
 
