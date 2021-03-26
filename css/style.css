@@ -533,6 +533,7 @@ iframe{
     left: 30px;
     padding: 20px;
     font-size: 20px;
+    z-index: 1;
 }
 
 #totop a:active{
