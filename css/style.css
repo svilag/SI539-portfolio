@@ -54,6 +54,7 @@ nav ul{
     flex-flow: column wrap;
     justify-content: left;
     align-items: center;
+    background-color: rgb(107, 110, 112, .5);
 }
 
 nav ul li{
@@ -94,7 +95,6 @@ nav ul li a{
 .currentpage{
     border-bottom: 4px solid #66FCF1;
     padding: 10px;
-    background-color: #6B6e70;
 }
 
 .currentpage a{
@@ -751,10 +751,6 @@ footer p{
     nav ul li:hover{
         border: 2px solid white;
         border-radius: 8px;
-    }
-
-    .currentpage{
-        background-color: #6B6e70;
     }
 
     .currentpage a{
