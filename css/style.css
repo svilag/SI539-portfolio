@@ -664,7 +664,7 @@ input[type=email]{
     border-radius: 8px;
     background-color: rgb(116, 114, 116, .75);
     position: fixed;
-    bottom: 12vh;
+    bottom: 20vh;
     left: 30px;
     padding: 10px;
     font-size: 20px;
@@ -869,6 +869,7 @@ footer p{
 
     #totop{
         padding: 20px;
+        bottom: 12vh;
     }
 
     footer ul li:hover{
