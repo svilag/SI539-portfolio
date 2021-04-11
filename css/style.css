@@ -664,7 +664,7 @@ input[type=email]{
     border-radius: 8px;
     background-color: rgb(116, 114, 116, .75);
     position: fixed;
-    bottom: 100px;
+    bottom: 12vh;
     left: 30px;
     padding: 10px;
     font-size: 20px;
