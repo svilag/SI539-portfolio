@@ -236,6 +236,10 @@ img{
       animation-name: seal;
       animation: none;
     }
+
+    .bg, .bground{
+        scroll-behavior: auto;
+    }
 }
 
 .sealcontainer{
