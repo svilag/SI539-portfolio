@@ -54,7 +54,6 @@ nav ul{
     flex-flow: column wrap;
     justify-content: left;
     align-items: center;
-    background-color: rgb(107, 110, 112, .5);
 }
 
 nav ul li{
