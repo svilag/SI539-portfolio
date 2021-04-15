@@ -377,6 +377,10 @@ img{
     margin: 5px;
 }
 
+.resumehead:hover{
+    cursor: pointer;
+}
+
 /*timeline here*/
 /*original code from w3schools.com*/
 *{
@@ -1006,5 +1010,24 @@ footer p{
 
     .page{
         padding-top: 60px;
+    }
+
+    .stuckboi01{
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .stuckboi02{
+        position: fixed;
+        top: 120px;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .collapse{
+        display: none;
+        overflow: hidden;
     }
 }
