@@ -716,38 +716,6 @@ footer p{
     text-transform: uppercase;
 }
 
-/* sticky headers */
-/* https://www.w3schools.com/howto/howto_js_sticky_header.asp */
-.stuckboi{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-}
-
-.page{
-    padding-top: 60px;
-}
-
-.stuckboi01{
-    position: fixed;
-    top: 60px;
-    width: 100%;
-    z-index: 2;
-}
-
-.stuckboi02{
-    position: fixed;
-    top: 120px;
-    width: 100%;
-    z-index: 2;
-}
-
-.collapse{
-    display: none;
-    overflow: hidden;
-}
-
 /*timeline mobile*/
 @media screen and (max-width: 600px){
     .resumehead{
@@ -917,6 +885,37 @@ footer p{
         padding: 10px;
     }
 
+    /* sticky headers */
+/* https://www.w3schools.com/howto/howto_js_sticky_header.asp */
+    .stuckboi{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .page{
+        padding-top: 60px;
+    }
+
+    .stuckboi01{
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .stuckboi02{
+        position: fixed;
+        top: 120px;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .collapse{
+        display: none;
+        overflow: hidden;
+    }
 }
 
 /* computer/laptop view*/
