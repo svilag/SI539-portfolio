@@ -39,8 +39,9 @@
             <a href="https://twitter.com/galivblehs"><img src="images/twitter28.png" alt="twitter"></a>
             <a href="contact-me.html"><img src="images/email28.png" alt="contact me"></a>
         </div>
+        <!-- sticky header code from  https://www.w3schools.com/jsref/prop_win_pagexoffset.asp-->
         <nav id="top">
-            <ul>
+            <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -52,8 +53,12 @@
     <main id="maincontent" class="bground">
       <h1 id="resume">Resumé</h1>
       <!-- timeline code from w2schools.com -->
+
+
+
+      <span id="education" class="sticky-target"></span>
       <h2 class="resumehead" tabindex="0">Education</h2>
-      <div class="timeline">
+      <div class="timeline process">
           <div class="container left">
             <div class="content">
               <h2>2022</h2>
@@ -75,6 +80,7 @@
             </div>
           </div>
         </div>
+      <span id="courses" class="sticky-target"></span>
       <h2 class="resumehead" tabindex="0">Relevant Course Projects</h2>
       <div class="timeline">
         <div class="container left">
@@ -124,6 +130,7 @@
           </div>
         </div>
       </div>
+      <span id="exp" class="sticky-target"></span>
       <h2 class="resumehead" tabindex="0">Experience</h2>
       <div class="timeline">
         <div class="container left">
@@ -166,6 +173,7 @@
           </div>
         </div>
       </div>
+      <span id="skills" class="sticky-target"></span>
       <h2 class="resumehead" tabindex="0">Skills</h2>
       <div class="timeline">
         <div class="container left">
@@ -188,10 +196,12 @@
             <h2>Coding Skills</h2>
             <ul>
               <li class="bpoint">Python3</li>
-              <li class="bpoint">Html5</li>
+              <li class="bpoint">HTML5</li>
               <li class="bpoint">CSS3</li>
-              <li class="bpoint">JavaScript</li>
+              <li class="bpoint">JavaScript, JSON, JSON-LD</li>
               <li class="bpoint">XML</li>
+              <li class="bpoint">SPARQL</li>
+              <li class="bpoint">SQL</li>
             </ul>
           </div>
         </div>
@@ -207,6 +217,7 @@
           </div>
         </div>
       </div>
+      <span id="volunteer" class="sticky-target"></span>
       <h2 class="resumehead" tabindex="0">Volunteer Experience</h2>
       <div class="timeline">
         <div class="container left">
@@ -232,6 +243,7 @@
           </div>
         </div>
       </div>
+      <span id="leadership" class="sticky-target"></span>
       <h2 class="resumehead" tabindex="0">Leadership Activities</h2>
       <div class="timeline">
         <div class="container left">
@@ -246,6 +258,7 @@
           </div>
         </div>
       </div>
+      <span id="awards" class="sticky-target"></span>
       <h2 class="resumehead" tabindex="0">Awards/Recognitions</h2>
       <div class="timeline">
         <div class="container left">
@@ -302,6 +315,6 @@
             <li><a href="contact-me.html">Contact Me</a></li>
         </ul>
     </footer>
-
+<script src="./js/scripts.js"></script>
 </body>
 </html>

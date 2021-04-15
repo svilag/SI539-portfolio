@@ -885,35 +885,126 @@ footer p{
 }
 
 /* computer/laptop view*/
-/* @media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px){
+    /* home */
+    .sealcontainer{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        align-items: center;
+    }
+
+    #seal01{
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+
+    #seal03{
+        grid-row: 3 / 5;
+        grid-column: 2 / 4;
+    }
+
+    /* about */
+    .aboutcontainer{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .abouttxt{
+        background-color: rgb(107, 110, 112, .8);
+        border-top: 2px solid white;
+    }
+
+    .aboutimg{
+        max-height: 90vh;
+    }
+
+    #me{
+        grid-column: 2 / 5 ;
+        grid-row: 1 / 2;
+    }
+
+    #mynameis{
+        grid-column: 3 / 6;
+        grid-row: 1 / 2;
+        position: relative;
+        top: 30%;
+    }
+
+    #married{
+        grid-column: 2 / 6;
+        grid-row: 2 / 3;
+    }
+
+    #hubby{
+        grid-column: 2 / 6;
+        grid-row: 2 / 3;
+        position: relative;
+        left: -20%;
+        top: 30%;
+    }
+
+    #painting{
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+    }
+
+    #freetime{
+        grid-column: 3 / 6;
+        grid-row: 3 / 4;
+        position: relative;
+        left: 5%;
+    }
+
+    /* gallery */
     #gallerycontainer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 5px;
+        grid-template-rows: auto 1fr 1fr auto 1fr 1fr;
+    }
+
+    figure figcaption{
+        background-color: #116466;
+        border-radius: 8px;
+        text-align: center;
     }
 
     #gallerycontainer img{
-        opacity: .5;}
+        transition-property: border-radius;
+        border-radius: 40%;
+    }
 
     #gallerycontainer img:hover{
-        opacity: 1;}
+        border-radius: 0;
+        border-radius: 8px;
+    }
 
     #gallerycontainer figure:nth-child(odd) figcaption{
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
         padding-left: 10px;
         text-align: center;
         color: white;
         border-bottom: 0;
+        margin: 5px;
     }
 
     #gallerycontainer figure:nth-child(even) figcaption{
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
         text-align: center;
         padding-right: 10px;
         color: white;
         border-bottom: 0;
+        margin: 5px;
     }
-} */
+
+    /* sticky headers */
+    /*  */
+    .stuckboi{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .page{
+        padding-top: 60px;
+    }
+}
