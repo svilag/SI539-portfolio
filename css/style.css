@@ -236,13 +236,13 @@ img{
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-    #animaseal {
+    img {
       animation-name: seal;
       animation: none;
     }
 
     .bg, .bground{
-        scroll-behavior: auto;
+        background-attachment: scroll;
     }
 }
 
@@ -368,6 +368,12 @@ img{
 
 .whattxt{
     color: white;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .flip-card-inner{
+        transition: none;
+    }
 }
 
 /* resume */
@@ -507,8 +513,6 @@ ul{
 #gallerycontainer img{
     width: 95%;
     border: 2px solid #66FCF1;
-    transition-property: opacity;
-    transition-duration: .5s;
 }
 
 #dogs{
@@ -995,6 +999,7 @@ footer p{
 
     #gallerycontainer img{
         transition-property: border-radius;
+        transition-duration: .5s;
         border-radius: 40%;
     }
 
@@ -1017,5 +1022,15 @@ footer p{
         color: white;
         border-bottom: 0;
         margin: 5px;
+    }
+
+    @media screen and (prefers-reduced-motion){
+        #gallerycontainer img{
+            transition: none;
+        }
+
+        #gallerycontainer img:hover{
+            border-radius: 40%;
+        }
     }
 }
