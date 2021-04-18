@@ -235,7 +235,7 @@ img{
     }
 }
 
-@media (prefers-reduced-motion) {
+@media screen and (prefers-reduced-motion: reduce) {
     #animaseal {
       animation-name: seal;
       animation: none;
@@ -902,20 +902,6 @@ footer p{
         padding-top: 60px;
     }
 
-    .stuckboi01{
-        position: fixed;
-        top: 60px;
-        width: 100%;
-        z-index: 2;
-    }
-
-    .stuckboi02{
-        position: fixed;
-        top: 120px;
-        width: 100%;
-        z-index: 2;
-    }
-
     .collapse{
         display: none;
         overflow: hidden;
@@ -1032,36 +1018,4 @@ footer p{
         border-bottom: 0;
         margin: 5px;
     }
-
-    /* sticky headers */
-    /* https://www.w3schools.com/howto/howto_js_sticky_header.asp */
-    /* .stuckboi{
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 2;
-    }
-
-    .page{
-        padding-top: 60px;
-    }
-
-    .stuckboi01{
-        position: fixed;
-        top: 60px;
-        width: 100%;
-        z-index: 2;
-    }
-
-    .stuckboi02{
-        position: fixed;
-        top: 120px;
-        width: 100%;
-        z-index: 2;
-    }
-
-    .collapse{
-        display: none;
-        overflow: hidden;
-    } */
 }
